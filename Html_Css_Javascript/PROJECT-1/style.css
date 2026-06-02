@@ -1,0 +1,48 @@
+/* asterisco é seletor global */
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+.esquerda {
+    flex: 1;
+    background-color: royalblue;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.direita {
+    flex: 1;
+    background-color: white;
+    
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    gap: 10px;
+}
+
+#container input, button {
+    padding: 10px;
+}
+
+button {
+    background-color: rgb(24, 101, 75);
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
