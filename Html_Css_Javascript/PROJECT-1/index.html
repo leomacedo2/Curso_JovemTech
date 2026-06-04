@@ -3,22 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>WSConsultoria</title>
   </head>
   <body>
-    <div class="esquerda">
-
-    </div>
+    <div class="esquerda"></div>
 
     <div class="direita">
       <div id="container">
         <label for="email">E-mail: </label>
-        <input type="text" placeholder="Insira seu e-mail">
+        <input type="text" placeholder="Insira seu e-mail" id="input-email" />
         <label for="senha">Senha: </label>
-        <input type="password" placeholder="Insira Senha">
-        <button type="submit">Entrar</button>
+        <input type="password" placeholder="Insira Senha" id="input-senha" />
+        <button type="submit" onclick="login()">Entrar</button>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

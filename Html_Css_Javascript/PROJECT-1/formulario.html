@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="formulario.css">
+    <script src="script.js"></script>
+    <title>Cadastro Aluno</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="#" method="POST">
+        <h2>Cadastro Aluno</h2>
+        <input
+          type="text"
+          name="nome"
+          placeholder="Insira o nome"
+          id="nome-aluno"
+        />
+        <input
+          type="text"
+          name="sobrenome"
+          placeholder="Insira o sobrenome"
+          id="sobrenome-aluno"
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Insira o email"
+          id="email-aluno"
+        />
+        <input
+          type="number"
+          name="idade"
+          placeholder="Insira a idade"
+          id="idade-aluno"
+        />
+        <label for="escolaridade">Escolaridade:</label>
+        <select name="escolaridade" id="escolaridade">
+          <option value="">Escolha uma opção</option>
+          <option value="1º turno">1º turno</option>
+          <option value="2º turno">2º turno</option>
+          <option value="3º turno">3º turno</option>
+        </select>
+
+        <label for="sexo">Sexo: </label>
+        <label>
+          <input type="radio" name="sexo" id="sexo-masculino" />
+          Masculino
+        </label>
+        <label>
+          <input type="radio" name="sexo" id="sexo-feminino" />
+          Feminino
+        </label>
+
+        <div class="turno">
+          <label for="turno">Turno: </label>
+          <label>
+            <input type="checkbox" name="turno" value="manhã" />
+            Manhã
+          </label>
+          <label>
+            <input type="checkbox" name="turno" value="tarde" />
+            Tarde
+          </label>
+          <label>
+            <input type="checkbox" name="turno" value="noite" />
+            Noite
+          </label>
+        </div>
+
+        <button type="submit" value="Cadastrar">Cadastrar</button>
+      </form>
+    </div>
+  </body>
+</html>
