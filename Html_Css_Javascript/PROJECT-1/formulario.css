@@ -10,8 +10,15 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: radial-gradient(blue,yellow,green);
+    /* background: radial-gradient(blue,yellow,green); */
+    background-color: lightblue;
 
+}
+
+@media screen and ( max-width: 600px) {
+    body {
+        background-color: blue;
+    }
 }
 
 .container {
