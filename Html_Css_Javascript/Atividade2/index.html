@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <img src="logo.png" alt="Descrição da imagem" />
+      <form action="#" method="POST" id="myform">
+        <h2>Bem vindo à Força Vital</h2>
+        <label for="nome">Nome Completo: </label>
+        <input type="text" name="nome" id="input_aluno" />
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="input_email" />
+        <label for="celular">Celular: </label>
+        <input type="number" name="celular" id="input_celular" />
+        <label for="nascimento">Data de Nascimento: </label>
+        <input
+          type="date"
+          name="data"
+          id="input_data"
+          placeholder="Data de Nascimento"
+        />
+        <label for="plano">Plano: </label>
+        <select name="planomensal" id="select_plano">
+          <option value="">Escolha um plano</option>
+          <option value="mensal">Mensal</option>
+          <option value="trimestral">Trimestral</option>
+          <option value="semestral">Semestral</option>
+          <option value="anual">Anual</option>
+        </select>
+        <label for="modalidade">Modalidade: </label>
+        <select name="modalidade" id="select_modalidade">
+          <option value="">Modalidade Preferida</option>
+          <option value="Academia">Academia</option>
+          <option value="Natação">Natação</option>
+          <option value="Funcional">Funcional</option>
+          <option value="Dança">Dança</option>
+          <option value="Luta">Luta</option>
+        </select>
+
+        <fieldset>
+          <legend>Dados de Identificação</legend>
+
+          <div class="form-row">
+            <div class="form-group todo">
+              <label for="input_cpf">CPF:</label>
+              <input type="number" id="input_cpf" name="cpf" />
+            </div>
+            <div class="form-group todo">
+              <label for="input_rg">RG:</label>
+              <input type="number" id="input_rg" name="rg" />
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Dados de Endereço</legend>
+
+          <div class="form-row">
+            <div class="form-group todo">
+              <label for="estado">Estado:</label>
+              <input
+                type="text"
+                id="estado"
+                name="estado"
+                placeholder="Ex: Sergipe"
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group todo">
+              <label for="cidade">Cidade:</label>
+              <input
+                type="text"
+                id="cidade"
+                name="cidade"
+                placeholder="Ex: Aracaju"
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group todo">
+              <label for="bairro">Bairro:</label>
+              <input
+                type="text"
+                id="bairro"
+                name="bairro"
+                placeholder="Ex: Suissa"
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group maior">
+              <label for="rua">Rua:</label>
+              <input type="text" id="rua" name="rua" placeholder="Ex: Gararu" />
+            </div>
+            <div class="form-group menor">
+              <label for="numero">Número:</label>
+              <input
+                type="text"
+                id="numero"
+                name="numero"
+                placeholder="Ex: 123"
+              />
+            </div>
+          </div>
+        </fieldset>
+
+        <textarea
+          id="observacoes"
+          name="observacoes"
+          placeholder="Observações"
+        ></textarea>
+
+        <button type="submit" value="Enviar">Enviar</button>
+      </form>
+    </div>
+  </body>
+</html>
