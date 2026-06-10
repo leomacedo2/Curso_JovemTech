@@ -25,7 +25,7 @@ input {
 }
 
 input:focus {
-    border-color: #0066cc; /* Dá uma corzinha azul quando clica para digitar */
+    border-color: #0066cc;
 }
 
 h2 {
@@ -36,7 +36,7 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 20%; /* É obrigatório definir uma largura (width) */
+  width: 20%; 
 }
 
 .container {
@@ -84,7 +84,6 @@ form {
     width: 100%;
 }
 
-/* Correção: O maior recebe flex 3 e o input cresce 100% */
 .maior {
     flex: 3;
 }
@@ -92,7 +91,6 @@ form {
     width: 100%;
 }
 
-/* Correção: O menor recebe flex 1 e o input cresce 100% */
 .menor {
     flex: 1;
 }
@@ -100,6 +98,19 @@ form {
     width: 100%;
 }
 
+textarea {
+    min-height: 120px; 
+    padding: 10px; 
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    outline: none;
+    resize: vertical; 
+    font-family: inherit; 
+}
+
+textarea:focus {
+    border-color: #0066cc;
+}
 button {
     font-size: 16px;
     font-weight: bold;
