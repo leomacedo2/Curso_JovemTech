@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Busca Filme</title>
+</head>
+<body>
+    <div class="caixa-filme">
+        <h1>Buscador de Filmes</h1>
+        <label for="nome">Digite o nome do filme: </label>
+        <input type="text" id="input_filme" placeholder="Ex: Matrix">
+        
+        <div class="botao">
+            <button onclick="buscarFilme()">Buscar</button>
+        </div>
+        
+        <div class="resultados">
+            <h2 id="titulo"></h2>
+            <img src="" alt="" id="poster"/>
+            <p id="descricao"></p>
+        </div>
+    </div>
+    <script src="app.js" ></script>
+    
+</body>
+</html>

@@ -1,25 +1,15 @@
 numero = int(input("Digite o valor: "))
+contador = 0
 
-if numero <= 1:
-    print("Numero 0, 1 ou negativo não é primo")
-elif numero == 2:
-    print("Numero 2 é primo")
-elif numero % 2 == 0:
-    print("Numeros pares não são primos")
+for i in range(1, numero + 1):
+    if numero % i == 0:
+        contador = contador + 1
+
+if contador == 2:
+    print(f"O numero {numero} é primo!")
 else:
-
-    e_primo = True
-    i = 3
-    while (i * i) <= numero:
-        if numero % i == 0:
-            e_primo = False
-            break   
-        i += 2   
-        
-    if e_primo:
-        print(f"O número {numero} é primo")
-    else:
-        print(f"O número {numero} não é primo")
+    print(f"O numero {numero} não é primo!")
+    
 
 
 
