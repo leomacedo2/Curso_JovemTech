@@ -1,6 +1,10 @@
 function buscarFilme() {
   let filme = document.getElementById("input_filme").value;
   apiGet(filme);
+  let divResultados = document.querySelector('.resultados');
+  let divNotas = document.querySelector('.nota');
+  divResultados.style.display = 'flex';
+  divNotas.style.display = 'flex';
 }
 
 async function apiGet(filme) {
