@@ -17,7 +17,15 @@ async function apiGet(filme) {
 function apresentarDados(resposta) {
   document.getElementById("poster").src = resposta.Poster;
 
+  
   document.getElementById("titulo").innerHTML = resposta.Title;
 
   document.getElementById("descricao").innerHTML = resposta.Plot;
+
+
+  document.getElementById("ano").innerHTML = `<strong>Ano:</strong> ${resposta.Year}`;
+  document.getElementById("diretor").innerHTML = `<strong>Diretor:</strong> ${resposta.Director}`;
+  document.getElementById("genero").innerHTML = `<strong>Genero:</strong> ${resposta.Genre}`;
+  document.getElementById("nota").innerHTML = `<strong>Nota:</strong> ${resposta.imdbRating}/10`;
+
 }
