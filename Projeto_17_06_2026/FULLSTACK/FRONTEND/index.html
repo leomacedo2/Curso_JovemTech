@@ -10,8 +10,11 @@
     <div class="container">
         <h2>Recursos Humanos</h2>
         <label for="matricula">Digite a matricula: </label>
-        <input type="text" id="matricula">
-        <button type="button">Consultar</button>
+        <input type="text" id="input_matricula">
+        <button type="button" onclick="buscarFuncionario()">Consultar</button>
+    </div>
+
+    <div class="resultados">
         <input type="text" id="nome" disabled placeholder ="Nome">
         <input type="text" id="setor" disabled placeholder ="Setor">
         <input type="text" id="cargo" disabled placeholder ="Cargo">
