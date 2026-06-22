@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 40px;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+.inicial {
+    background-color: white;
+    padding: 50px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 450px;
+}
+
+.inicial h2 {
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+.inicial a {
+    text-decoration: none; 
+    margin: 20px;
+}
+
+.pesquisa {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: white; 
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.pesquisa a {
+    text-decoration: none;
+    align-self: flex-start;
+}
+
+.resultados {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.container {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 450px;
+}
+
+h2 {
+    margin-top:10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #3498db;
+}
+
+ol {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: left;
+}
+
+li {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    line-height: 1.6;
+}
+
+li:first-child{
+    margin-top: 50px;
+}
+
+li:last-child {
+    border-bottom: none;
+
+}

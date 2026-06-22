@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Medico</title>
+  </head>
+  <body>
+
+    <div class="pesquisa">
+      <a href="index.html">
+        <button>Voltar</button>
+      </a>
+      <h2>Pesquisar Médico</h2>
+      <input type="text" id="input-medico" placeholder="Digite um nome" />
+      <button onclick="pesquisarMedico()">Pesquisar</button>
+      <div class="resultados">
+        <p id="nome-medico"></p>
+        <p id="nome-especialidade"></p>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>Lista de Médicos</h2>
+      <ol id="lista-medicos"></ol>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
