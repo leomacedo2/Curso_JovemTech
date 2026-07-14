@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual do Adulto | Guia de Sobrevivência</title>
+    
+    <!-- Importando o CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Link para o nosso futuro arquivo CSS (ainda vamos criar) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+    <!-- 1. MENU DE NAVEGAÇÃO OBRIGATÓRIO -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">🛠️ Manual do Adulto</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#mural">Mural de Dicas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Enviar Dica</a></li>
+                    <!-- Botão do Tema (Funcionalidade JS Futura) -->
+                    <li class="nav-item ms-lg-3">
+                        <button class="btn btn-outline-warning btn-sm mt-1" id="btn-desespero">🚨 Modo Desespero</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. PÁGINA INICIAL / BANNER -->
+    <header id="home" class="container-fluid text-center bg-warning text-dark py-5 mt-5">
+        <div class="py-5">
+            <h1 class="display-3 fw-bold">Ninguém sabe ser adulto.</h1>
+            <p class="lead fs-4">A gente só finge bem. Bem-vindo ao seu guia de sobrevivência.</p>
+            <a href="#mural" class="btn btn-dark btn-lg mt-3">Ver Dicas de Sobrevivência</a>
+        </div>
+    </header>
+
+    <!-- 3. SEÇÃO SOBRE OBRIGATÓRIA -->
+    <section id="sobre" class="container py-5 mt-4">
+        <div class="row text-center">
+            <div class="col-md-8 mx-auto">
+                <h2 class="fw-bold mb-3">Sobre o Manual</h2>
+                <p class="text-muted fs-5">
+                    Este site nasceu de uma necessidade real: a escola nos ensinou a fórmula de Bhaskara, 
+                    mas esqueceu de nos ensinar a desentupir uma pia ou fritar um ovo sem colocar fogo na cozinha. 
+                    Aqui, reunimos dicas da internet e da galera para ajudar jovens adultos a não destruírem a própria casa.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. GALERIA DE IMAGENS / MURAL DE DICAS OBRIGATÓRIA -->
+    <section id="mural" class="container py-5 bg-white rounded shadow-sm">
+        <h2 class="text-center fw-bold mb-4">Mural de Dicas</h2>
+        
+        <!-- Filtros (Funcionalidade JS Futura) -->
+        <div class="text-center mb-4">
+            <p class="fw-bold mb-2">Filtrar por Tema:</p>
+            <div class="btn-group mb-3" role="group">
+                <button type="button" class="btn btn-outline-primary active">Todas</button>
+                <button type="button" class="btn btn-outline-primary">🍳 Cozinha</button>
+                <button type="button" class="btn btn-outline-primary">🧹 Casa & Limpeza</button>
+                <button type="button" class="btn btn-outline-primary">💵 Burocracia</button>
+            </div>
+            <br>
+            <p class="fw-bold mb-2">Filtrar por Origem:</p>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-outline-secondary">Oficiais</button>
+                <button type="button" class="btn btn-outline-secondary">Da Galera</button>
+            </div>
+        </div>
+
+        <!-- Grid de Cards (Galeria) -->
+        <div class="row g-4" id="galeria-dicas">
+            <!-- Card Falso (Hardcoded) só para ver como fica antes do JS -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=500&q=80" class="card-img-top" alt="Arroz">
+                    <div class="card-body">
+                        <span class="badge bg-primary mb-2">Cozinha</span>
+                        <h5 class="card-title fw-bold">Como fazer arroz soltinho</h5>
+                        <p class="card-text text-muted">A regra de ouro: para cada xícara de arroz, use duas xícaras de água fervendo. Não mexa enquanto cozinha!</p>
+                    </div>
+                    <div class="card-footer bg-transparent d-flex justify-content-between align-items-center">
+                        <small class="text-muted">Por: Dica Padrão</small>
+                        <button class="btn btn-sm btn-outline-danger">❤️ 25 Útil</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Mais cards entrarão aqui dinamicamente pelo JS -->
+        </div>
+    </section>
+
+    <!-- 5. FORMULÁRIO DE CONTATO OBRIGATÓRIO -->
+    <section id="contato" class="container py-5 mt-4 mb-5">
+        <div class="row">
+            <div class="col-md-8 mx-auto bg-white p-5 rounded shadow-sm">
+                <h2 class="text-center fw-bold mb-4">Envie sua Dica (Contato)</h2>
+                <form id="form-dica">
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="nome" class="form-label">Seu Nome</label>
+                            <input type="text" class="form-control" id="nome" placeholder="João Silva" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="email" placeholder="joao@email.com" required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="titulo" class="form-label">Título da Dica</label>
+                            <input type="text" class="form-control" id="titulo" placeholder="Ex: Como limpar ferro de passar" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="categoria" class="form-label">Categoria</label>
+                            <select class="form-select" id="categoria" required>
+                                <option value="" selected disabled>Escolha um tema...</option>
+                                <option value="cozinha">🍳 Cozinha</option>
+                                <option value="casa">🧹 Casa & Limpeza</option>
+                                <option value="burocracia">💵 Burocracia & Grana</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="imagem" class="form-label">Link de uma imagem ilustrativa (Opcional)</label>
+                        <input type="url" class="form-control" id="imagem" placeholder="https://link-da-imagem.com/foto.jpg">
+                    </div>
+                    <div class="mb-4">
+                        <label for="descricao" class="form-label">Passo a Passo</label>
+                        <textarea class="form-control" id="descricao" rows="4" placeholder="Explique como fazer..." required></textarea>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-warning btn-lg fw-bold">Publicar no Mural</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. RODAPÉ OBRIGATÓRIO -->
+    <footer class="bg-dark text-white text-center py-4 mt-auto">
+        <div class="container">
+            <p class="mb-0">© 2026 Manual do Adulto. Desenvolvido por Leonardo Macedo para o curso do Jovem Tech.</p>
+        </div>
+    </footer>
+
+    <!-- Importando o JS do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Link para o nosso futuro arquivo JS (ainda vamos criar) -->
+    <script src="script.js"></script>
+</body>
+</html>
